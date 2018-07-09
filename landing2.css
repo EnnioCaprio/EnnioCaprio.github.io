@@ -1,0 +1,176 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  margin:0;
+  font-family: sans-serif;
+  line-height: 1.6;
+  color: #000;
+  font-size: 18px;
+}
+
+.container{
+  border: 1px solid #000;
+  padding-bottom: 10px;
+  background: rgba(255,255,255,0.5);
+  height: 30vh;
+  width:80%;
+}
+
+#showcase{
+  background: url(street.jpg) no-repeat;
+  background-position: center;
+  background-size: cover;
+  height:100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 0 30px;
+}
+
+#showcase h1{
+  font-size: 52px;
+
+
+
+}
+
+#showcase p{
+  font-size: 22px;
+  font-weight: lighter;
+  text-align: center;
+}
+
+#showcase .button{
+  position: absolute;
+  font-size: 20px;
+  top:57%;
+  left:50%;
+  transform: translate(-50%,-50%);
+  text-decoration: none;
+  color: #000;
+  border: 2px solid #000;
+  border-radius: 4px;
+  padding: 7px;
+  font-weight: bold;
+}
+
+#showcase .button:hover{
+  color: white;
+  background: #009933;
+}
+
+#section-a{
+  padding: 20px;
+  background: #808080;
+  text-align: center;
+  font-size: 15px;
+  font-family: sans-serif;
+}
+
+#section-b{
+  padding: 20px;
+  background: #A9A9A9;
+  text-align: center;
+  font-size: 15px;
+  font-family: sans-serif;
+}
+
+#section-c{
+  padding: 20px;
+  text-align: center;
+  font-size: 15px;
+  font-family: sans-serif;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  background:#808080;
+
+}
+
+#section-c .box1{
+  background: #e3e3e3;
+
+}
+
+#section-c .box2{
+  background: #e3e3e3;
+}
+
+
+
+.cards{
+  max-width: 1200px;
+  margin: 40px auto;
+}
+
+.card{
+ width: 30%;
+ margin: 0 1.5%;
+ background: #e3e3e3;
+ float: left;
+}
+
+.card__image{
+  width:100%;
+  height: auto;
+}
+
+.card__copy{
+  padding: 6px 19px;
+}
+
+.card__copy h3{
+  margin-bottom: 0;
+}
+
+.card__copy p{
+  line-height: 24px;
+}
+
+.clearfix:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: " ";
+  clear: both;
+  height: 0;
+}
+
+.footer{
+  padding: 30px;
+  text-align: center;
+  background: #333;
+  color:#fff;
+}
+* html .clearfix             { zoom: 1; } /* IE6 */
+*:first-child+html .clearfix { zoom: 1; } /* IE7 */
+
+@media (max-width:768px) {
+  .card{
+    width:90%;
+    margin:0 5%;
+  }
+
+  #showcase h1{
+    font-size: 18px;
+
+  }
+
+  #showcase p{
+    font-size:16px;
+  }
+
+  .container{
+    border: 1px solid #000;
+    padding-bottom: 10px;
+    background: rgba(255,255,255,0.5);
+    height: 30vh;
+    width: 90%;
+
+  }
+
+}
